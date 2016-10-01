@@ -94,7 +94,7 @@ module RuboCop
         def extract_method_chain(node)
           chain = []
           while !node.nil? && node.send_type?
-            chain << extract_method(node)
+            chain << extract_method(node) if add_to_chain(node)
             node = node.parent
           end
           chain
@@ -103,6 +103,13 @@ module RuboCop
         def extract_method(node)
           _receiver, method_name, *_args = *node
           method_name
+        end
+
+        # Only add the method to the chain if the method being
+        # called if it's a member of the time class.
+        def add_to_chain(node)
+          receiver, _method_name, *_args = *node
+          !(receiver.inspect.index 'Time').nil?
         end
 
         # checks that parent node of send_type

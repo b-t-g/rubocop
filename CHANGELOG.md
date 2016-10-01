@@ -20,6 +20,7 @@
 * [#3430](https://github.com/bbatsov/rubocop/issues/3430): Fix exception in `Performance/RedundantMerge` when inspecting a `#merge!` with implicit receiver. ([@drenmi][])
 * [#3411](https://github.com/bbatsov/rubocop/issues/3411): Avoid auto-correction crash for single `when` in `Performance/CaseWhenSplat`. ([@jonas054][])
 * [#3286](https://github.com/bbatsov/rubocop/issues/3286): Allow `self.a, self.b = b, a` in `Style/ParallelAssignment`. ([@jonas054][])
+* [#3474](https://github.com/bbatsov/rubocop/issues/3474): Make the `Rails/TimeZone` only analyze functions which have "Time" in the receiver. ([@b-t-g][])
 
 ### Changes
 
