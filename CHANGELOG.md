@@ -25,11 +25,17 @@
 * [#4368](https://github.com/bbatsov/rubocop/issues/4368): Make `Performance/HashEachMethod` inspect send nodes with any receiver. ([@gohdaniel15][])
 * [#4508](https://github.com/bbatsov/rubocop/issues/4508): Add new `Style/ReturnNil` cop. ([@donjar][])
 * [#4629](https://github.com/bbatsov/rubocop/issues/4629): Add Metrics/MethodLength cop for `define_method`. ([@jekuta][])
+* [#4702](https://github.com/bbatsov/rubocop/pull/4702): Add new `Lint/UriEscapeUnescape` cop. ([@koic][])
+* [#4696](https://github.com/bbatsov/rubocop/pull/4696): Add new `Performance/UriDefaultParser` cop. ([@koic][])
+* [#4694](https://github.com/bbatsov/rubocop/pull/4694): Add new `Lint/UriRegexp` cop. ([@koic][])
+* Add new `Style/MinMax` cop. ([@drenmi][])
 
 ### Bug fixes
 
+* [#4709](https://github.com/bbatsov/rubocop/pull/4709): Use cached remote config on network failure. ([@kristjan][])
 * [#4688](https://github.com/bbatsov/rubocop/pull/4688): Accept yoda condition which isn't commutative. ([@fujimura][])
 * [#4676](https://github.com/bbatsov/rubocop/issues/4676): Make `Style/RedundantConditional` cop work with elsif. ([@akhramov][])
+* [#4656](https://github.com/bbatsov/rubocop/issues/4656): Modify `Style/ConditionalAssignment` autocorrection to work with unbracketed arrays. ([@akhramov][])
 * [#4615](https://github.com/bbatsov/rubocop/pull/4615): Don't consider `<=>` a comparison method. ([@iGEL][])
 * [#4664](https://github.com/bbatsov/rubocop/pull/4664): Fix typos in Rails/HttpPositionalArguments. ([@JoeCohen][])
 * [#4618](https://github.com/bbatsov/rubocop/pull/4618): Fix `Lint/FormatParameterMismatch` false positive if format string includes `%%5B` (CGI encoded left bracket). ([@barthez][])
@@ -60,6 +66,7 @@
 * [#4646](https://github.com/bbatsov/rubocop/issues/4646): Make `Lint/Debugger` aware of `Kernel` and cbase. ([@pocke][])
 * [#4643](https://github.com/bbatsov/rubocop/issues/4643): Modify `Style/InverseMethods` to not register a separate offense for an inverse method nested inside of the block of an inverse method offense. ([@rrosenblum][])
 * [#4593](https://github.com/bbatsov/rubocop/issues/4593): Fix false positive in `Rails/SaveBang` when `save/update_attribute` is used with a `case` statement. ([@theRealNG][])
+* [#4322](https://github.com/bbatsov/rubocop/issues/4322): Fix Style/MultilineMemoization from autocorrecting to invalid ruby. ([@dpostorivo][])
 
 ### Changes
 
@@ -2903,3 +2910,4 @@
 [@akhramov]: https://github.com/akhramov
 [@jekuta]: https://github.com/jekuta
 [@fujimura]: https://github.com/fujimura
+[@kristjan]: https://github.com/kristjan

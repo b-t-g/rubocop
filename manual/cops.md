@@ -226,6 +226,8 @@ In the following section you find all available cops:
 * [Lint/UnreachableCode](cops_lint.md#lintunreachablecode)
 * [Lint/UnusedBlockArgument](cops_lint.md#lintunusedblockargument)
 * [Lint/UnusedMethodArgument](cops_lint.md#lintunusedmethodargument)
+* [Lint/UriEscapeUnescape](cops_lint.md#linturiescapeunescape)
+* [Lint/UriRegexp](cops_lint.md#linturiregexp)
 * [Lint/UselessAccessModifier](cops_lint.md#lintuselessaccessmodifier)
 * [Lint/UselessAssignment](cops_lint.md#lintuselessassignment)
 * [Lint/UselessComparison](cops_lint.md#lintuselesscomparison)
@@ -288,6 +290,7 @@ In the following section you find all available cops:
 * [Performance/StringReplacement](cops_performance.md#performancestringreplacement)
 * [Performance/TimesMap](cops_performance.md#performancetimesmap)
 * [Performance/UnfreezeString](cops_performance.md#performanceunfreezestring)
+* [Performance/UriDefaultParser](cops_performance.md#performanceuridefaultparser)
 
 #### Department [Rails](cops_rails.md)
 
@@ -396,6 +399,7 @@ In the following section you find all available cops:
 * [Style/MethodCalledOnDoEndBlock](cops_style.md#stylemethodcalledondoendblock)
 * [Style/MethodDefParentheses](cops_style.md#stylemethoddefparentheses)
 * [Style/MethodMissing](cops_style.md#stylemethodmissing)
+* [Style/MinMax](cops_style.md#styleminmax)
 * [Style/MissingElse](cops_style.md#stylemissingelse)
 * [Style/MixinGrouping](cops_style.md#stylemixingrouping)
 * [Style/ModuleFunction](cops_style.md#stylemodulefunction)

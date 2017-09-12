@@ -147,7 +147,7 @@ resource cleanup.
 f = File.open('file')
 
 # good
-f = File.open('file') do
+File.open('file') do |f|
   ...
 end
 ```
@@ -1914,6 +1914,26 @@ end
 ### References
 
 * [https://github.com/bbatsov/ruby-style-guide#no-method-missing](https://github.com/bbatsov/ruby-style-guide#no-method-missing)
+
+## Style/MinMax
+
+Enabled by default | Supports autocorrection
+--- | ---
+Enabled | Yes
+
+This cop checks for potential uses of `Enumerable#minmax`.
+
+### Example
+
+```ruby
+# bad
+bar = [foo.min, foo.max]
+return foo.min, foo.max
+
+# good
+bar = foo.minmax
+return foo.minmax
+```
 
 ## Style/MissingElse
 

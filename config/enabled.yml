@@ -687,6 +687,12 @@ Style/MethodMissing:
   StyleGuide: '#no-method-missing'
   Enabled: true
 
+Style/MinMax:
+  Description: >-
+                 Use `Enumerable#minmax` instead of `Enumerable#min`
+                 and `Enumerable#max` in conjunction.'
+  Enabled: true
+
 Style/MixinGrouping:
   Description: 'Checks for grouping of mixins in `class` and `module` bodies.'
   StyleGuide: '#mixin-grouping'
@@ -1403,6 +1409,20 @@ Lint/UnreachableCode:
   Description: 'Unreachable code.'
   Enabled: true
 
+Lint/UriEscapeUnescape:
+  Description: >-
+                 `URI.escape` method is obsolete and should not be used. Instead, use
+                 `CGI.escape`, `URI.encode_www_form` or `URI.encode_www_form_component`
+                 depending on your specific use case.
+                 Also `URI.unescape` method is obsolete and should not be used. Instead, use
+                 `CGI.unescape`, `URI.decode_www_form` or `URI.decode_www_form_component`
+                 depending on your specific use case.
+  Enabled: true
+
+Lint/UriRegexp:
+  Description: 'Use `URI::DEFAULT_PARSER.make_regexp` instead of `URI.regexp`.'
+  Enabled: true
+
 Lint/UselessAccessModifier:
   Description: 'Checks for useless access modifiers.'
   Enabled: true
@@ -1599,6 +1619,10 @@ Performance/TimesMap:
 
 Performance/UnfreezeString:
   Description: 'Use unary plus to get an unfrozen string literal.'
+  Enabled: true
+
+Performance/UriDefaultParser:
+  Description: 'Use `URI::DEFAULT_PARSER` instead of `URI::Parser.new`.'
   Enabled: true
 
 #################### Rails #################################
